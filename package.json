@@ -75,7 +75,7 @@
     "start": "hjs-dev-server",
     "lint": "eslint .",
     "build": "NODE_ENV=production webpack",
-    "deploy": "cp -r dist site/; git subtree push --prefix site/ origin gh-pages; rm -rf site"
+    "deploy": "cp -r dist docs"
   },
   "pre-commit": [
     "lint"
