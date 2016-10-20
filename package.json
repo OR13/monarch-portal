@@ -75,7 +75,7 @@
     "start": "hjs-dev-server",
     "lint": "eslint .",
     "build": "NODE_ENV=production webpack",
-    "deploy": "cp -r dist docs"
+    "deploy": "rm -rf docs; cp -r dist docs; git add -A; git commit -m 'deploy :rocket:'; git push"
   },
   "pre-commit": [
     "lint"
