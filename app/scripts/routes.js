@@ -5,6 +5,7 @@ import Page from './views/page'
 import HomePage from './pages/home'
 
 import IPLDPage from './pages/ipld'
+
 import UPortPage from './pages/uPort'
 import TrufflePage from './pages/truffle'
 
@@ -16,6 +17,7 @@ import RoutingPage from './pages/routing'
 import ConfigPage from './pages/config'
 import LogPage from './pages/logs'
 import NotFoundPage from './pages/notfound'
+
 
 export default (
 <Route component={Page} path='/'>

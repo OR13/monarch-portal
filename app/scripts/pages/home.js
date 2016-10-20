@@ -37,16 +37,18 @@ export default class Home extends Component {
           location: {}
         }
       })
-      getLocation(this.props.ipfs, peer.Addresses, (err, location) => {
-        if (err || !location) return console.error(err)
-        if (!this.mounted) return
-        this.setState({
-          node: {
-            peer,
-            location
-          }
-        })
-      })
+
+      console.log('something wrong with this... ', peer)
+      // getLocation(this.props.ipfs, peer.Addresses, (err, location) => {
+      //   if (err || !location) return console.error(err)
+      //   if (!this.mounted) return
+      //   this.setState({
+      //     node: {
+      //       peer,
+      //       location
+      //     }
+      //   })
+      // })
     })
   }
 
