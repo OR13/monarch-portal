@@ -1,0 +1,101 @@
+{
+  "name": "monarch-portal",
+  "version": "0.3.0",
+  "description": "React IPFS and Ethereum Platform Seed",
+  "dependencies": {
+    "bootstrap": "^3.3.5",
+    "d3": "^3.5.6",
+    "font-awesome": "^4.5.0",
+    "i18next": "^2.0.22",
+    "i18next-browser-languagedetector": "^0.2.2",
+    "i18next-localstorage-cache": "^0.2.2",
+    "i18next-sprintf-postprocessor": "^0.2.2",
+    "i18next-xhr-backend": "^0.5.3",
+    "ipfs-api": "^3.0.2",
+    "ipfs-geoip": "^2.0.0",
+    "lodash": "^4.2.0",
+    "react": "^0.14.7",
+    "react-bootstrap": "^0.28.1",
+    "react-dom": "^0.14.2",
+    "react-localstorage": "^0.2.8",
+    "react-router": "^2.0.0-rc4",
+    "three": "^0.74.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "babel": "^6.3.13",
+    "babel-core": "^6.4.0",
+    "babel-eslint": "^6.0.0-beta.5",
+    "babel-loader": "^6.2.1",
+    "babel-plugin-transform-react-display-name": "^6.3.13",
+    "babel-plugin-transform-runtime": "^6.4.3",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-react-hmre": "^1.0.1",
+    "babel-preset-stage-0": "^6.3.13",
+    "babel-runtime": "^6.3.19",
+    "chai": "^3.4.1",
+    "chai-enzyme": "^0.4.1",
+    "cheerio": "^0.20.0",
+    "classnames": "^2.2.2",
+    "css-loader": "^0.23.0",
+    "debug": "^2.2.0",
+    "enzyme": "^2.1.0",
+    "eslint": "^2.9.0",
+    "eslint-config-standard": "^5.1.0",
+    "eslint-config-standard-react": "^2.3.0",
+    "eslint-plugin-promise": "^1.1.0",
+    "eslint-plugin-react": "^4.2.1",
+    "eslint-plugin-standard": "^1.3.1",
+    "file-loader": "^0.8.5",
+    "hjs-webpack": "^7.0.0",
+    "https-browserify": "0.0.1",
+    "json-loader": "^0.5.4",
+    "karma": "^0.13.19",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-mocha": "^0.2.1",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.7.0",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.2",
+    "mocha": "^2.3.4",
+    "postcss-loader": "^0.8.0",
+    "pre-commit": "^1.1.2",
+    "react-addons-test-utils": "^0.14.3",
+    "react-router-bootstrap": "^0.20.1",
+    "stream-http": "^2.1.0",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.11"
+  },
+  "scripts": {
+    "test": "karma start --single-run=true karma.conf.js",
+    "start": "hjs-dev-server",
+    "lint": "eslint .",
+    "build": "NODE_ENV=production webpack",
+    "deploy": "git subtree push --prefix dist/ origin gh-pages"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "author": "Orie Steele <orie@or13.io> (http://or13.io/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/transmute-industries/monarch-portal"
+  },
+  "keywords": [
+    "ipfs",
+    "webui",
+    "webkit"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/transmute-industries/monarch-portal/issues"
+  },
+  "homepage": "https://github.com/transmute-industries/monarch-portal",
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
