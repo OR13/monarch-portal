@@ -1,6 +1,6 @@
 var createConfig = require('hjs-webpack')
 
-module.exports = function makeConfig (isDev) {
+module.exports = function makeConfig(isDev) {
   var config = createConfig({
     isDev: isDev,
     in: './app/scripts/app.js',
@@ -8,12 +8,12 @@ module.exports = function makeConfig (isDev) {
     output: {
       publicPath: ''
     },
-    html: function (ctx) {
+    html: function(ctx) {
       return ctx.defaultTemplate({
         publicPath: ''
       })
     },
-    clearBeforeBuild: '!(locale|img|favicon.ico)'
+    clearBeforeBuild: '!(locale|img|favicon.ico|CNAME)'
   })
 
   // Handle js-ipfs-api
